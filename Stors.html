@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>stores</title>
+  
+ <link rel="stylesheet" href="Stors.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ </head>
+ <body>
+ 
+  <div class="header">
+ 
+	<h5> STORES</h5>
+  </div>
+
+  <div class="upper-btn-box">
+	<div class="left-box">
+		<button id="add-btn"><i class="fa fa-plus"></i>&nbsp; Add Stores</button>
+		<button id="del-all-btn" style="background-color:#33B5E6;"><i class="fa fa-eraser"></i>&nbsp; Clear All Data</button>
+		<input type="checkbox" name="" id="del-all-box">
+
+	</div>
+   <div class="right-box">
+	<i class="fa fa-search"></i>
+	<input type="text" id="empid"placeholder="Enter Store Name">
+	<button style="background-color:#EE534F">Search</button>
+   </div>
+  </div>
+  <div class="table-box">
+	<table >
+	<tr>
+		<th>Sr No</th>
+		<th>Profile</th>
+		<th>Store.id</th>
+		<th>Store.Name</th>
+		<th>Oner.Name</th>
+		<th>Contect</th>
+		<th>Address</th>
+		<th>Action</th>
+	</tr>	
+	
+
+	
+	<tbody id="table-data">
+		
+	</tbody>
+
+	</table>
+
+  </div>
+  <div class="modal">
+  <i class="fa fa-times-circle close-icon"></i>
+	 <div class="left-modal">
+		<div class="img-box">
+			<img src="images.jpg" id="profile-Pic" width"80" height="80" alt="">
+			<i class="fa fa-plus"></i>
+			<input type="file" id="upload-pic">
+		</div>
+	 </div>
+
+	 <div class="right-modal">
+	 <form id="register-form">
+	    <div class="input-box">
+			<label for="s.id">s.id</label>
+			<input type="text" id="id">
+	    </div>
+
+		<div class="input-box">
+			<label for="s.name">s.name</label>
+			<input type="text"  required id="s.name">
+	    </div>
+		
+		<div class="input-box">
+			<label for="o.name">o.name</label>
+			<input type="text" required  id="o.name">
+	    </div>
+		
+		<div class="input-box">
+			<label for="contect">contect</label>
+			<input type="text"required id="contect">
+	    </div>
+
+		<div class="input-box">
+			<label for="address">Address</label>
+			<input type="text" required id="Address">
+	    </div>
+		<div class="input-box">
+			<button id="register-btn">Ragister</button>
+			<button id="Update-btn" disabled="disabled" style="background-color:#EE534F">Update</button>
+		</div>
+		</form>
+   
+	 </div>
+
+  </div>
+  <script src="stors.js"></script>
+ </body>
+</html>

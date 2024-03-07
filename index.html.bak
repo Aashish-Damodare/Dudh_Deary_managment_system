@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="Stylesheet" href="D:\Project__2\Style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ </head>
+ <body>
+ <!-- First we have to create Ragistretion from -->
+  <div class="container">
+     <div class = "from-box">
+       <form action "" name="Formfill" onsubmit="return validation()">
+	     <h2> Ragister</h2>
+		 <p id="result">head </p>
+		   <div class="input-box">
+		   <i class='bx bxs-user-circle'></i>
+			<input type="text" name="Username" placeholder="Username">
+	  	   </div>
+
+             <div class="input-box">
+            <i class='bx bxs-envelope'></i>
+			<input type="Email" name="Email" placeholder="Email">
+	  	   </div>
+
+             <div class="input-box">
+           <i class='bx bxs-lock-alt'></i>
+			<input type="Password" name="Password" placeholder="Password">
+	  	   </div>
+
+              <div class="input-box">
+           <i class='bx bxs-lock-alt'></i>
+			<input type="CPassword" name="CPassword" placeholder="Confrom Password">
+	  	   </div>
+		       
+			   <div Class="button">
+				<input type ="Submit"  class="btn" onclick="validation()" value="Ragister">
+			   </div>
+			  <div class="group">
+				<span><a href="#">Forget-Password</a></span>
+				<span><a href="D:\Project__2\Login.html">Login</a></span>
+			  </div> 
+
+        </form>
+    </div>
+<!-- Second we have to create pop up value -->
+<div class="popup" id="popup">
+	<h2>Thank you!</h2>
+	<p>Your Ragishtration is succsessfully.Thanks!</p>
+	<a><button onclick="closeSlide()">ok</button></a>
+</div>
+
+  </div>
+ <!-- Second we have to create pop up value -->
+ <script src="index.js"></script>
+ </body>
+</html>
